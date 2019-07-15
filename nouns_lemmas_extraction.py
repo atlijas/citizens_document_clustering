@@ -96,7 +96,3 @@ def write_to_file(lst, ending, separator):
 
 # write_to_file(all_nouns_per_text, 'nns', ', ')
 # write_to_file(all_lemmas_per_text, 'lmms',' ')
-
-
-print(f'Writing to {len(all_nouns_per_text)+len(all_lemmas_per_text)}
-      files finished in {end-start} seconds')

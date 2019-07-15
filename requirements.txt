@@ -1,5 +1,6 @@
+spacy==2.1.6
 regex==2018.1.10
-gensim==3.7.3
 reynir==1.5.0
 nltk==3.4.1
+gensim==3.7.3
 scikit_learn==0.21.2
