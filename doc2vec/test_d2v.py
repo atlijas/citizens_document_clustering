@@ -23,13 +23,3 @@ def print_similar(n_files):
 
 
 # print_similar(10)
-
-# Returns a dict
-# Format: {file: similarity_to_all_other_files}
-def get_similarity(n_files):
-    for file in all_files:
-        most_similar = (model.docvecs.most_similar([file], topn = n_files))
-        yield {file: most_similar}
-
-
-similarity = [w for w in get_similarity(len(all_files))]
