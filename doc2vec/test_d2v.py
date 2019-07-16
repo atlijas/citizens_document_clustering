@@ -4,8 +4,8 @@ from shutil import get_terminal_size
 import glob
 import os
 
-all_files = glob.glob('txts/*lmms')
-model = Doc2Vec.load('lemmas.model')
+all_files = glob.glob('path/to/lmms/files/*lmms')
+model = Doc2Vec.load('model.model')
 
 # This prints _ of equal length to your terminal size
 # Works as a separator between printed files
