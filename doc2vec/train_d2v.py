@@ -1,4 +1,5 @@
 from gensim.models.doc2vec import Doc2Vec, TaggedDocument
+from nltk import word_tokenize
 import regex as re
 import glob
 import os
