@@ -1,12 +1,14 @@
 # Citizens Document Clustering
 
-This tool uses document embeddings from Gensim by @RaRe-Technologies
-to classify and make clusters from documents.
+- Document clustering for Citizens Foundation.
+- Built using document embeddings from Gensim by RaRe-Technologies.
+- Our Doc2Vec model assumes lemmas, although inflected words work, too.
+- Icelandic texts are lemmatized using ice_lemma_extraction.py, which is
+built on Reynir by Mideind.
+- English texts are lemmatized using en_lemmatizer.py, which is supported
+by spaCy.
+- This repository is a work in progress.
 
-Icelandic texts are lemmatized using nouns_lemmas_extractions.py, which was built around
-Reynir by @mideind. Lemmatization is available for Icelandic and English. As
-of now, users need to input a path to files for Icelandic in
-nouns_lemmas_extractions.py and provide a file as an arg (flag: -f) for English.
 
 # License
 [AGPL](https://en.wikipedia.org/wiki/Affero_General_Public_License)
