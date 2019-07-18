@@ -8,6 +8,8 @@ words = words_model.wv.index2entity
 ranked_words = {k:v for (v,k) in enumerate(words)}
 
 
+# Checks whether a word word has been split in two
+# A common spelling mistake in Icelandic
 def check_splits(text):
     text = text.split()
     for word in range(len(text)):
@@ -17,4 +19,6 @@ def check_splits(text):
         except IndexError:
             pass
 
+
+# If Word2Vec model is properly trained this should print "smávægilegt"
 check_splits('smá vægilegt')
