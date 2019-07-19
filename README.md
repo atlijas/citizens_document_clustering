@@ -16,6 +16,10 @@ by spaCy.
 - A script to get the similarity (float) between all docs in the model.
 - A couple of short texts (__not__ suited for training a reliable model) used for testing.
 
+<img src="https://github.com/atlijas/citizens_document_clustering/blob/master/imgs/plot.png?raw=true" alt="plot" width="200"/>
+
+
+
 ## Spelling
 ### Includes:
 - A script to see if a word is split in two, a common spelling mistake
