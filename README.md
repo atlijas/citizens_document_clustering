@@ -15,10 +15,12 @@ by spaCy.
 - A script to test a Doc2Vec model.
 - A script to get the similarity (float) between all docs in the model.
 - A couple of short texts (__not__ suited for training a reliable model) used for testing.
+- __NOTE__: This plot is only an example to show the relations between the files.
+
+
 
 <img src="https://github.com/atlijas/citizens_document_clustering/blob/master/imgs/plot.png?raw=true" alt="plot" width="1200"/>
 
-- __NOTE__: This plot is only an example to show the relations between the files.
 
 
 
