@@ -19,7 +19,7 @@ by spaCy.
 
 
 
-<img src="https://github.com/atlijas/citizens_document_clustering/blob/master/imgs/plot.png?raw=true" alt="plot" width="1200"/>
+<img src="https://github.com/atlijas/citizens_document_clustering/blob/master/imgs/plot.png?raw=true" alt="plot" width="1500"/>
 
 
 
