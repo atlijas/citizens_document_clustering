@@ -13,7 +13,7 @@ by spaCy.
 - A script to train a Doc2Vec model.
 - A script to test a Doc2Vec model.
 - A script to get the similarity (float) between all docs in the model.
-- A couple of short texts, not suited for training a reliable model.
+- A couple of short texts (__not__ suited for training a reliable model) used for tests.
 
 ## Spelling
 ### Includes:
@@ -28,6 +28,7 @@ in Icelandic.
 ### Includes:
 - A script to train a Word2Vec model.
   - As of now, the model is only used for correction of spelling mistakes.
+  - Might be used to classify documents further based on keyword vectors.
 
 
 
