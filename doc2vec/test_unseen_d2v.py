@@ -27,4 +27,4 @@ def infer_print_similar(n_files):
         os.system(f'cat {file}')
         print('\n', term_line)
 
-# infer_print_similar(5)
+#infer_print_similar(5)
