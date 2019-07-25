@@ -13,6 +13,7 @@ by spaCy.
 ### Includes:
 - A script to train a Doc2Vec model.
 - A script to test a Doc2Vec model.
+- A script to infer a vector from a previously unseen document.
 - A script to get the similarity (float) between all docs in the model.
 - A couple of short texts (__not__ suited for training a reliable model) used for testing.
 - __NOTE__: This plot is only an example to show the relations between the files.
