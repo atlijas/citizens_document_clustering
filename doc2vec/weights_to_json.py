@@ -23,5 +23,8 @@ def to_dict():
             yield x
 
 
-weights = [w for w in rewrite()]
-weights = json.dumps({'links': weights})
+weights = [w for w in to_dict()]
+#weights = json.dumps({'links': weights})
+
+with open('json_weights.txt', 'w', encoding = 'utf-8') as file:
+    json.dump({'links': weights}, file, ensure_ascii = False, indent = 4)
