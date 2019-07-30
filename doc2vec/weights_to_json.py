@@ -26,5 +26,5 @@ def to_dict():
 weights = [w for w in to_dict()]
 #weights = json.dumps({'links': weights})
 
-with open('json_weights.txt', 'w', encoding = 'utf-8') as file:
+with open('weights.json', 'w', encoding = 'utf-8') as file:
     json.dump({'links': weights}, file, ensure_ascii = False, indent = 4)
