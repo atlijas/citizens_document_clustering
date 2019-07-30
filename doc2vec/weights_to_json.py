@@ -3,28 +3,24 @@ import glob
 import json
 
 
-all_files = glob.glob('path/to/lemmas/*lmms')
-model = Doc2Vec.load('name_of_model.model')
+all_files = glob.glob('txts/*lmms')
+model = Doc2Vec.load('lmms.model')
 
 
 def get_similarity(n_files):
     for file in all_files:
         most_similar = (model.docvecs.most_similar([file], topn = n_files))
-        yield  [file, most_similar]
+        for f,s in most_similar:
+            yield {'source': file, 'target': f, 'value': s}
 
 
-similarity = [w for w in get_similarity(len(all_files))]
+weights = [w for w in get_similarity(len(all_files))]
 
 
-def to_dict():
-    for file1, file2 in similarity:
-        for f, k in file2:
-            x = {'source': file1, 'target': f, 'value': k}
-            yield x
+def write_to_json():
+        for w in get_similarity(len(all_files)):
+                with open('weights.json', 'a', encoding = 'utf-8') as file:
+                        json.dump(w, file, ensure_ascii = False, indent = 4)
 
 
-weights = [w for w in to_dict()]
-#weights = json.dumps({'links': weights})
-
-with open('weights.json', 'w', encoding = 'utf-8') as file:
-    json.dump({'links': weights}, file, ensure_ascii = False, indent = 4)
+write_to_json()
