@@ -5,7 +5,7 @@ import glob
 import os
 
 
-all_files = glob.glob('path/to/lmms/files/*lmms')
+all_files = glob.glob('txts/*lmms')
 
 # Reads multi-digit numbers in file names as a single number
 # Also known as human sorting
@@ -18,16 +18,18 @@ def natural_sort(l):
 
 
 all_files = natural_sort(all_files)
+
 # Yields a generator of files
 def get_files():
     for file in all_files:
         with open(file, 'r', encoding = 'utf-8') as t:
             text = t.read()
-            yield text
+            if len(text.split()) > 70:
+                yield file, text
 
 
-data = [w for w in get_files()]
-
+all_files = [file for file, text in get_files()]
+data = [text for file, text in get_files()]
 
 # All filenames as a separate list for tagging with TaggedDocument
 # Structure: [[file1], [file2]]
@@ -53,5 +55,5 @@ model.train(tagged_data,
             total_examples = model.corpus_count,
             epochs = model.epochs)
 
-model.save('name_of_model.model')
+model.save('new_model.model')
 print('Model saved')
