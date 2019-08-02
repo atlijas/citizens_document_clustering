@@ -5,7 +5,7 @@ import glob
 import os
 
 
-all_files = glob.glob('txts/*lmms')
+all_files = glob.glob('path/to/lemmas/*lmms')
 
 # Reads multi-digit numbers in file names as a single number
 # Also known as human sorting
@@ -55,5 +55,5 @@ model.train(tagged_data,
             total_examples = model.corpus_count,
             epochs = model.epochs)
 
-model.save('new_model.model')
+model.save('name_of_model.model')
 print('Model saved')
