@@ -33,7 +33,7 @@ in Icelandic.
 - A script that catches spelling mistakes, based on Word2Vec and probability.
 
 
-# Word2Vec
+## Word2Vec
 ### Includes:
 - A script to train a Word2Vec model.
   - As of now, the model is only used for correction of spelling mistakes.
@@ -41,5 +41,5 @@ in Icelandic.
 
 
 
-# License
+## License
 [AGPL](https://en.wikipedia.org/wiki/Affero_General_Public_License)
