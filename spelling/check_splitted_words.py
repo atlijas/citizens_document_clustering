@@ -10,7 +10,6 @@ words = words_model.wv.index2entity
 # All words ranked by how often they appear
 word_freq = {k:v for (v,k) in enumerate(words)}
 
-#print(words_model.most_similar('apaköttur'))
 
 # Checks whether a word word has been split in two
 # A common spelling mistake in Icelandic
