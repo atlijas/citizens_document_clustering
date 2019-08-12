@@ -74,11 +74,5 @@ def write_to_file(lst, ending, separator):
 
 
 if __name__ == '__main__':
-    # All lemmas
-    # Structure: [file[sent[lemmas]]]
     all_lemmas = [l for l in get_lemmas()]
-    # All lemmas
-    # Structure = [file1[lemma1, lemma2], file2[lemma1, lemma2]]
-    #all_lemmas_per_text = [w for w in flatten(all_lemmas)]
-    # Writes all lemmas til files (ending: .lmms) with space as separator
     write_to_file(all_lemmas, 'lmms',' ')
