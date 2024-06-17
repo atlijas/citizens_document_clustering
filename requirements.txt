@@ -5,4 +5,4 @@ gensim==3.7.3
 regex==2018.1.10
 networkx==2.3
 spacy==2.1.6
-scikit_learn==0.21.3
+scikit_learn==1.5.0
